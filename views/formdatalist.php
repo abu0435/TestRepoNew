@@ -350,13 +350,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <ul id="sidebarnav">
                         <li class="nav-small-cap">PERSONAL</li>
                         <li>
-                            <a class="" href="<?=base_url('index.php/welcome/index')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                            <a class="" href="<?=base_url('index.php/form/dashboard')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
                         </li>
                         <li>
-                            <a class="" href="<?=base_url('index.php/welcome/form')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Form </span></a>
+                            <a class="" href="<?=base_url('index.php/form/form')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Form </span></a>
                         </li>
                         <li>
-                            <a class="" href="<?=base_url('index.php/welcome/list')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">List </span></a>
+                            <a class="" href="<?=base_url('index.php/form/list')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">List </span></a>
                         </li>
                         <li>
                             <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>

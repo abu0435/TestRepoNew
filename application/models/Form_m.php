@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Data_m extends MY_Model {
+class Form_m extends MY_Model {
 
 	protected $_table_name = 'data';
 	protected $_primary_key = 'ID';

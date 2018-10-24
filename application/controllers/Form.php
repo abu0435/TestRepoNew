@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Form extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -22,13 +22,13 @@ class Welcome extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 	}
-	public function index()
+	public function dashboard()
 	{
 		//$this->load->view('index');
 		//$this->load->myview('views','welcome_message1', $data);
 		//echo 'd';
 		//$this->load->myview('views','welcome_message1');
-		$this->load->myview('views','index');
+		$this->load->myview('views','dashboard');
 	}
 
 	public function form()
@@ -36,7 +36,7 @@ class Welcome extends CI_Controller {
 		$this->load->helper('form');
 		if($_POST) {
 				//print_r($_POST);
-				$this->load->model("data_m");
+				$this->load->model("form_m");
 				$dob=$this->input->post("dob");
 				$dob=date('Y-m-d',strtotime($dob));
 				$array = array(
@@ -50,7 +50,7 @@ class Welcome extends CI_Controller {
 					"postcode" => $this->input->post("postcode"),
 					"country" => $this->input->post("country"),
 				);
-				$result = $this->data_m->insert($array);
+				$result = $this->form_m->insert($array);
 				if($result == 1)
 				{
 				$this->session->set_flashdata('success', '<div class="alert alert-success">Personal Info Saved Successfully. <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div>');
@@ -59,20 +59,20 @@ class Welcome extends CI_Controller {
 				{
 					$this->session->set_flashdata('error', '<div class="alert alert-danger"> Error. Try Again...! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div>');
 				}
-				redirect(base_url("/welcome/form"));
+				redirect(base_url("/form/form"));
 		}
 		else
 		{
 			
-		$this->load->myview('views','form-layout');	
+		$this->load->myview('views','form');	
 		}
 		
 	}
 
 	public function list()
 	{
-		$this->load->model("data_m");
-		$this->data['datam'] = $this->data_m->getdata();
-		$this->load->myview('views','list', $this->data);
+		$this->load->model("form_m");
+		$this->data['datam'] = $this->form_m->getdata();
+		$this->load->myview('views','formdatalist', $this->data);
 	}
 }

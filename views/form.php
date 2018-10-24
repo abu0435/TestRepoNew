@@ -15,12 +15,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Material Pro Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
     <!-- Bootstrap Core CSS -->
     <link href="<?=base_url('assets/plugins/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
-    <!-- chartist CSS -->
-    <link href="<?=base_url('assets/plugins/chartist-js/dist/chartist.min.css')?>" rel="stylesheet">
-    <link href="<?=base_url('assets/plugins/chartist-js/dist/chartist-init.css')?>" rel="stylesheet">
-    <link href="<?=base_url('assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css')?>" rel="stylesheet">
-    <!--This page css - Morris CSS -->
-    <link href="<?=base_url('assets/plugins/c3-master/c3.min.css')?>" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="<?=base_url('assets/plugins/toast-master/css/jquery.toast.css')?>" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="<?=base_url('assets/css/style.css')?>" rel="stylesheet">
     <!-- You can change the theme colors from here -->
@@ -55,7 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!-- ============================================================== -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
-                        <!-- Logo icon --><b>
+                        <!-- Logo icon -->
+                        <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
                             <img src="<?=base_url('assets/images/logo-icon.png')?>" alt="homepage" class="dark-logo" />
@@ -63,7 +60,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <img src="<?=base_url('assets/images/logo-light-icon.png')?>" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
-                        <!-- Logo text --><span>
+                        <!-- Logo text -->
+                        <span>
                          <!-- dark Logo text -->
                          <img src="<?=base_url('assets/images/logo-text.png')?>" alt="homepage" class="dark-logo" />
                          <!-- Light Logo text -->    
@@ -83,7 +81,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                        <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                        <li class="nav-item hidden-sm-down search-box">
+                            <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <form class="app-search">
                                 <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
                         </li>
@@ -120,10 +119,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="card">
                                                 <div class="card-header" role="tab" id="headingOne">
                                                     <h5 class="mb-0">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                   Collapsible Group Item #1
                                                 </a>
-                                              </h5> </div>
+                                                    </h5>
+                                                </div>
                                                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                                                     <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high. </div>
                                                 </div>
@@ -131,10 +131,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="card">
                                                 <div class="card-header" role="tab" id="headingTwo">
                                                     <h5 class="mb-0">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                   Collapsible Group Item #2
                                                 </a>
-                                              </h5> </div>
+                                                    </h5>
+                                                </div>
                                                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                                                     <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
                                                 </div>
@@ -142,10 +143,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <div class="card">
                                                 <div class="card-header" role="tab" id="headingThree">
                                                     <h5 class="mb-0">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                   Collapsible Group Item #3
                                                 </a>
-                                              </h5> </div>
+                                                    </h5>
+                                                </div>
                                                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                                                     <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
                                                 </div>
@@ -338,9 +340,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="profile-img"> <img src="<?=base_url('assets/images/users/profile.png')?>" alt="user" /> </div>
                     <!-- User profile text-->
                     <div class="profile-text"> <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe</a>
-                        <div class="dropdown-menu animated flipInY"> <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a> <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a> <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+                        <div class="dropdown-menu animated flipInY">
+                            <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                            <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+                            <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
                             <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-                            <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a> </div>
+                            <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
                     </div>
                 </div>
                 <!-- End User profile text-->
@@ -348,16 +354,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="nav-small-cap">PERSONAL</li>
+                        
                         <li>
-                            <a class="" href="<?=base_url('index.php/welcome/index')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                            <a class="" href="<?=base_url('index.php/form/dashboard')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
                         </li>
                         <li>
-                            <a class="" href="<?=base_url('index.php/welcome/form')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Form </span></a>
+                            <a class="" href="<?=base_url('index.php/form/form')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Form </span></a>
                         </li>
                         <li>
-                            <a class="" href="<?=base_url('index.php/welcome/list')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">List </span></a>
+                            <a class="" href="<?=base_url('index.php/form/list')?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">List </span></a>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="index.html">Dashboard 1</a></li>
                                 <li><a href="index2.html">Dashboard 2</a></li>
@@ -375,7 +383,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="../material-rtl/index4.html">RTL Version</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Apps</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Apps</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="app-calendar.html">Calendar</a></li>
                                 <li><a href="app-chat.html">Chat app</a></li>
@@ -385,14 +394,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="app-contact-detail.html">Contact Detail</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-email"></i><span class="hide-menu">Inbox</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-email"></i><span class="hide-menu">Inbox</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="app-email.html">Mailbox</a></li>
                                 <li><a href="app-email-detail.html">Mailbox Detail</a></li>
                                 <li><a href="app-compose.html">Compose Mail</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Ui Elements</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Ui Elements</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="ui-cards.html">Cards</a></li>
                                 <li><a href="ui-user-card.html">User Cards</a></li>
@@ -424,7 +435,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </li>
                         <li class="nav-devider"></li>
                         <li class="nav-small-cap">FORMS, TABLE &amp; WIDGETS</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Forms</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Forms</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="form-basic.html">Basic Forms</a></li>
                                 <li><a href="form-layout.html">Form Layouts</a></li>
@@ -446,7 +458,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="form-tinymce.html">Tinymce Editor</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Tables</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Tables</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="table-basic.html">Basic Tables</a></li>
                                 <li><a href="table-layout.html">Table Layouts</a></li>
@@ -458,7 +471,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="table-editable-table.html">Editable Table</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-widgets"></i><span class="hide-menu">Widgets</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-widgets"></i><span class="hide-menu">Widgets</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="widget-apps.html">Widget Apps</a></li>
                                 <li><a href="widget-data.html">Widget Data</a></li>
@@ -467,7 +481,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </li>
                         <li class="nav-devider"></li>
                         <li class="nav-small-cap">EXTRA COMPONENTS</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book-multiple"></i><span class="hide-menu">Page Layout</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book-multiple"></i><span class="hide-menu">Page Layout</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="layout-single-column.html">1 Column</a></li>
                                 <li><a href="layout-fix-header.html">Fix header</a></li>
@@ -477,7 +492,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="layout-logo-center.html">Logo in Center</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">Sample Pages</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-book-open-variant"></i><span class="hide-menu">Sample Pages</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="starter-kit.html">Starter Kit</a></li>
                                 <li><a href="pages-blank.html">Blank page</a></li>
@@ -515,7 +531,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Charts</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Charts</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="chart-morris.html">Morris Chart</a></li>
                                 <li><a href="chart-chartist.html">Chartis Chart</a></li>
@@ -528,7 +545,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="chart-peity.html">Peity Charts</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-brush"></i><span class="hide-menu">Icons</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-brush"></i><span class="hide-menu">Icons</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="icon-material.html">Material Icons</a></li>
                                 <li><a href="icon-fontawesome.html">Fontawesome Icons</a></li>
@@ -539,17 +557,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="icon-flag.html">Flag Icons</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-map-marker"></i><span class="hide-menu">Maps</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-map-marker"></i><span class="hide-menu">Maps</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="map-google.html">Google Maps</a></li>
                                 <li><a href="map-vector.html">Vector Maps</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Multi level dd</span></a>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Multi level dd</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="#">item 1.1</a></li>
                                 <li><a href="#">item 1.2</a></li>
-                                <li> <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
+                                <li>
+                                    <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
                                     <ul aria-expanded="false" class="collapse">
                                         <li><a href="#">item 1.3.1</a></li>
                                         <li><a href="#">item 1.3.2</a></li>
@@ -567,9 +588,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- End Sidebar scroll-->
             <!-- Bottom points-->
             <div class="sidebar-footer">
-                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
-                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a> </div>
+                <!-- item-->
+                <a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                <!-- item-->
+                <a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
             <!-- End Bottom points-->
         </aside>
         <!-- ============================================================== -->
@@ -588,10 +613,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 col-8 align-self-center">
-                        <h3 class="text-themecolor">Dashboard</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Forms</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item active">Form</li>
                         </ol>
                     </div>
                     <div class="col-md-7 col-4 align-self-center">
@@ -599,7 +624,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="d-flex m-r-20 m-l-10 hidden-md-down">
                                 <div class="chart-text m-r-10">
                                     <h6 class="m-b-0"><small>THIS MONTH</small></h6>
-                                    <h4 class="m-t-0 text-info">$58,356</h4></div>
+                                    <h4 class="m-t-0 text-info">$58,356</h4>
+                                </div>
                                 <div class="spark-chart">
                                     <div id="monthchart"></div>
                                 </div>
@@ -607,7 +633,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="d-flex m-r-20 m-l-10 hidden-md-down">
                                 <div class="chart-text m-r-10">
                                     <h6 class="m-b-0"><small>LAST MONTH</small></h6>
-                                    <h4 class="m-t-0 text-primary">$48,356</h4></div>
+                                    <h4 class="m-t-0 text-primary">$48,356</h4>
+                                </div>
                                 <div class="spark-chart">
                                     <div id="lastmonthchart"></div>
                                 </div>
@@ -626,415 +653,126 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!-- ============================================================== -->
                 <!-- Row -->
                 <div class="row">
-                    <!-- Column -->
-                    <div class="col-lg-8 col-md-7">
-                        <div class="card">
+                    <div class="col-lg-12"><?php echo $this->session->flashdata('success'); $this->session->flashdata('error'); ?>
+                        <div class="card card-outline-info">
+                            <div class="card-header">
+                                <h4 class="m-b-0 text-white">Other Sample form</h4>
+                            </div>
                             <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="d-flex flex-wrap">
-                                            <div>
-                                                <h3 class="card-title">Sales Overview</h3>
-                                                <h6 class="card-subtitle">Ample Admin Vs Pixel Admin</h6> </div>
-                                            <div class="ml-auto">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Ample</h6> </li>
-                                                    <li>
-                                                        <h6 class="text-muted  text-info"><i class="fa fa-circle font-10 m-r-10"></i>Pixel</h6> </li>
-                                                </ul>
+                                <form   action="http://localhost/testapp/index.php/welcome/form" role="form" method="post">
+                                    <div class="form-body">
+                                        <h3 class="card-title">Person Info</h3>
+                                        <hr>
+                                        <div class="row p-t-20">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">First Name</label>
+                                                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John doe">
+                                                    <!--<small class="form-control-feedback"> This is inline help </small>--> </div>
                                             </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Last Name</label>
+                                                    <input type="text" id="lastName" name="lastName" class="form-control " placeholder="12n">
+                                                    <!--<small class="form-control-feedback"> This field has error. </small>--> </div>
+                                            </div>
+                                            <!--/span-->
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="amp-pxl" style="height: 360px;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Our Visitors </h3>
-                                <h6 class="card-subtitle">Different Devices Used to Visit</h6>
-                                <div id="visitor" style="height:290px; width:100%;"></div>
-                            </div>
-                            <div>
-                                <hr class="m-t-0 m-b-0">
-                            </div>
-                            <div class="card-body text-center ">
-                                <ul class="list-inline m-b-0">
-                                    <li>
-                                        <h6 class="text-muted text-info"><i class="fa fa-circle font-10 m-r-10 "></i>Mobile</h6> </li>
-                                    <li>
-                                        <h6 class="text-muted  text-primary"><i class="fa fa-circle font-10 m-r-10"></i>Desktop</h6> </li>
-                                    <li>
-                                        <h6 class="text-muted  text-success"><i class="fa fa-circle font-10 m-r-10"></i>Tablet</h6> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row -->
-                <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-lg-4 col-xlg-3 col-md-5">
-                        <div class="card blog-widget">
-                            <div class="card-body">
-                                <div class="blog-image"><img src="<?=base_url('assets/images/big/img1.jpg')?>" alt="img" class="img-responsive" /></div>
-                                <h3>Business development new rules for 2017</h3>
-                                <label class="label label-rounded label-success">Technology</label>
-                                <p class="m-t-20 m-b-20">
-                                    Lorem ipsum dolor sit amet, this is a consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                </p>
-                                <div class="d-flex">
-                                    <div class="read"><a href="javascript:void(0)" class="link font-medium">Read More</a></div>
-                                    <div class="ml-auto">
-                                        <a href="javascript:void(0)" class="link m-r-10 " data-toggle="tooltip" title="Like"><i class="mdi mdi-heart-outline"></i></a> <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="Share"><i class="mdi mdi-share-variant"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-xlg-9 col-md-7">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex flex-wrap">
-                                    <div>
-                                        <h3 class="card-title">Newsletter Campaign</h3>
-                                        <h6 class="card-subtitle">Overview of Newsletter Campaign</h6>
-                                    </div>
-                                    <div class="ml-auto align-self-center">
-                                        <ul class="list-inline m-b-0">
-                                            <li>
-                                                <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Open Rate</h6> </li>
-                                            <li>
-                                                <h6 class="text-muted text-info"><i class="fa fa-circle font-10 m-r-10"></i>Recurring Payments</h6> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="campaign ct-charts"></div>
-                                <div class="row text-center">
-                                    <div class="col-lg-4 col-md-4 m-t-20">
-                                        <h1 class="m-b-0 font-light">5098</h1><small>Total Sent</small></div>
-                                    <div class="col-lg-4 col-md-4 m-t-20">
-                                        <h1 class="m-b-0 font-light">4156</h1><small>Mail Open Rate</small></div>
-                                    <div class="col-lg-4 col-md-4 m-t-20">
-                                        <h1 class="m-b-0 font-light">1369</h1><small>Click Rate</small></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-lg-4 col-md-4">
-                        <div class="card card-inverse card-primary">
-                            <div class="card-body">
-                                <div class="d-flex">
-                                    <div class="m-r-20 align-self-center">
-                                        <h1 class="text-white"><i class="ti-pie-chart"></i></h1></div>
-                                    <div>
-                                        <h3 class="card-title">Bandwidth usage</h3>
-                                        <h6 class="card-subtitle">March  2017</h6> </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4 align-self-center">
-                                        <h2 class="font-light text-white">50 GB</h2>
-                                    </div>
-                                    <div class="col-8 p-t-10 p-b-20 align-self-center">
-                                        <div class="usage chartist-chart" style="height:65px"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-4 col-md-4">
-                        <div class="card card-inverse card-success">
-                            <div class="card-body">
-                                <div class="d-flex">
-                                    <div class="m-r-20 align-self-center">
-                                        <h1 class="text-white"><i class="icon-cloud-download"></i></h1></div>
-                                    <div>
-                                        <h3 class="card-title">Download count</h3>
-                                        <h6 class="card-subtitle">March  2017</h6> </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4 align-self-center">
-                                        <h2 class="font-light text-white">35487</h2>
-                                    </div>
-                                    <div class="col-8 p-t-10 p-b-20 text-right">
-                                        <div class="spark-count" style="height:65px"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-4 col-md-4">
-                        <div class="card">
-                            <img class="" src="<?=base_url('assets/images/background/weatherbg.jpg')?>" alt="Card image cap">
-                            <div class="card-img-overlay" style="height:110px;">
-                                <h3 class="card-title text-white m-b-0 dl">New Delhi</h3>
-                                <small class="card-text text-white font-light">Sunday 15 march</small>
-                            </div>
-                            <div class="card-body weather-small">
-                                <div class="row">
-                                    <div class="col-8 b-r align-self-center">
-                                        <div class="d-flex">
-                                            <div class="display-6 text-info"><i class="wi wi-day-rain-wind"></i></div>
-                                            <div class="m-l-20">
-                                                <h1 class="font-light text-info m-b-0">32<sup>0</sup></h1>
-                                                <small>Sunny Rainy day</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 text-center">
-                                        <h1 class="font-light m-b-0">25<sup>0</sup></h1>
-                                        <small>Tonight</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                </div>
-                <!-- Row -->
-                <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-lg-4 col-xlg-3 col-md-5">
-                        <!-- Column -->
-                        <div class="card">
-                            <img class="card-img-top" src="<?=base_url('assets/images/background/profile-bg.jpg')?>" alt="Card image cap">
-                            <div class="card-body little-profile text-center">
-                                <div class="pro-img"><img src="<?=base_url('assets/images/users/4.jpg')?>" alt="user" /></div>
-                                <h3 class="m-b-0">Angela Dominic</h3>
-                                <p>Web Designer &amp; Developer</p>
-                                <a href="javascript:void(0)" class="m-t-10 waves-effect waves-dark btn btn-primary btn-md btn-rounded">Follow</a>
-                                <div class="row text-center m-t-20">
-                                    <div class="col-lg-4 col-md-4 m-t-20">
-                                        <h3 class="m-b-0 font-light">1099</h3><small>Articles</small></div>
-                                    <div class="col-lg-4 col-md-4 m-t-20">
-                                        <h3 class="m-b-0 font-light">23,469</h3><small>Followers</small></div>
-                                    <div class="col-lg-4 col-md-4 m-t-20">
-                                        <h3 class="m-b-0 font-light">6035</h3><small>Following</small></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column -->
-                        <div class="card">
-                            <div class="card-body bg-info">
-                                <h4 class="text-white card-title">My Contacts</h4>
-                                <h6 class="card-subtitle text-white m-b-0 op-5">Checkout my contacts here</h6>
-                            </div>
-                            <div class="card-body">
-                                <div class="message-box contact-box">
-                                    <h2 class="add-ct-btn"><button type="button" class="btn btn-circle btn-lg btn-success waves-effect waves-dark">+</button></h2>
-                                    <div class="message-widget contact-widget">
-                                        <!-- Message -->
-                                        <a href="#">
-                                            <div class="user-img"> <img src="<?=base_url('assets/images/users/1.jpg')?>" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                                            <div class="mail-contnet">
-                                                <h5>Pavan kumar</h5> <span class="mail-desc">info@wrappixel.com</span></div>
-                                        </a>
-                                        <!-- Message -->
-                                        <a href="#">
-                                            <div class="user-img"> <img src="<?=base_url('assets/images/users/2.jpg')?>" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
-                                            <div class="mail-contnet">
-                                                <h5>Sonu Nigam</h5> <span class="mail-desc">pamela1987@gmail.com</span></div>
-                                        </a>
-                                        <!-- Message -->
-                                        <a href="#">
-                                            <div class="user-img"> <span class="round">A</span> <span class="profile-status away pull-right"></span> </div>
-                                            <div class="mail-contnet">
-                                                <h5>Arijit Sinh</h5> <span class="mail-desc">cruise1298.fiplip@gmail.com</span></div>
-                                        </a>
-                                        <!-- Message -->
-                                        <a href="#">
-                                            <div class="user-img"> <img src="<?=base_url('assets/images/users/4.jpg')?>" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
-                                            <div class="mail-contnet">
-                                                <h5>Pavan kumar</h5> <span class="mail-desc">kat@gmail.com</span></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-xlg-9 col-md-7">
-                        <div class="card">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs profile-tab" role="tablist">
-                                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Activity</a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a> </li>
-                                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a> </li>
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="home" role="tabpanel">
-                                    <div class="card-body">
-                                        <div class="profiletimeline">
-                                            <div class="sl-item">
-                                                <div class="sl-left"> <img src="<?=base_url('assets/images/users/1.jpg')?>" alt="user" class="img-circle"> </div>
-                                                <div class="sl-right">
-                                                    <div><a href="#" class="link">John Doe</a> <span class="sl-date">5 minutes ago</span>
-                                                        <p>assign a new task <a href="#"> Design weblayout</a></p>
-                                                        <div class="row">
-                                                            <div class="col-lg-3 col-md-6 m-b-20"><img src="<?=base_url('assets/images/big/img1.jpg')?>" alt="user" class="img-responsive radius"></div>
-                                                            <div class="col-lg-3 col-md-6 m-b-20"><img src="<?=base_url('assets/images/big/img2.jpg')?>" alt="user" class="img-responsive radius"></div>
-                                                            <div class="col-lg-3 col-md-6 m-b-20"><img src="<?=base_url('assets/images/big/img3.jpg')?>" alt="user" class="img-responsive radius"></div>
-                                                            <div class="col-lg-3 col-md-6 m-b-20"><img src="<?=base_url('assets/images/big/img4.jpg')?>" alt="user" class="img-responsive radius"></div>
-                                                        </div>
-                                                        <div class="like-comm"> <a href="javascript:void(0)" class="link m-r-10">2 comment</a> <a href="javascript:void(0)" class="link m-r-10"><i class="fa fa-heart text-danger"></i> 5 Love</a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="sl-item">
-                                                <div class="sl-left"> <img src="<?=base_url('assets/images/users/2.jpg')?>" alt="user" class="img-circle"> </div>
-                                                <div class="sl-right">
-                                                    <div> <a href="#" class="link">John Doe</a> <span class="sl-date">5 minutes ago</span>
-                                                        <div class="m-t-20 row">
-                                                            <div class="col-md-3 col-xs-12"><img src="<?=base_url('assets/images/big/img1.jpg')?>" alt="user" class="img-responsive radius"></div>
-                                                            <div class="col-md-9 col-xs-12">
-                                                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p> <a href="#" class="btn btn-success"> Design weblayout</a></div>
-                                                        </div>
-                                                        <div class="like-comm m-t-20"> <a href="javascript:void(0)" class="link m-r-10">2 comment</a> <a href="javascript:void(0)" class="link m-r-10"><i class="fa fa-heart text-danger"></i> 5 Love</a> </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="sl-item">
-                                                <div class="sl-left"> <img src="<?=base_url('assets/images/users/3.jpg')?>" alt="user" class="img-circle"> </div>
-                                                <div class="sl-right">
-                                                    <div><a href="#" class="link">John Doe</a> <span class="sl-date">5 minutes ago</span>
-                                                        <p class="m-t-10"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper </p>
-                                                    </div>
-                                                    <div class="like-comm m-t-20"> <a href="javascript:void(0)" class="link m-r-10">2 comment</a> <a href="javascript:void(0)" class="link m-r-10"><i class="fa fa-heart text-danger"></i> 5 Love</a> </div>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="sl-item">
-                                                <div class="sl-left"> <img src="<?=base_url('assets/images/users/4.jpg')?>" alt="user" class="img-circle"> </div>
-                                                <div class="sl-right">
-                                                    <div><a href="#" class="link">John Doe</a> <span class="sl-date">5 minutes ago</span>
-                                                        <blockquote class="m-t-10">
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                                        </blockquote>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--second tab-->
-                                <div class="tab-pane" id="profile" role="tabpanel">
-                                    <div class="card-body">
+                                        <!--/row-->
                                         <div class="row">
-                                            <div class="col-md-3 col-xs-6 b-r"> <strong>Full Name</strong>
-                                                <br>
-                                                <p class="text-muted">Johnathan Deo</p>
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Gender</label>
+                                                    <select name="gender" class="form-control custom-select">
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                    </select>
+                                                    <!--<small class="form-control-feedback"> Select your gender </small>--> </div>
                                             </div>
-                                            <div class="col-md-3 col-xs-6 b-r"> <strong>Mobile</strong>
-                                                <br>
-                                                <p class="text-muted">(123) 456 7890</p>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Date of Birth</label>
+                                                    <input type="date" name="dob" class="form-control" placeholder="dd/mm/yyyy">
+                                                </div>
                                             </div>
-                                            <div class="col-md-3 col-xs-6 b-r"> <strong>Email</strong>
-                                                <br>
-                                                <p class="text-muted">johnathan@admin.com</p>
-                                            </div>
-                                            <div class="col-md-3 col-xs-6"> <strong>Location</strong>
-                                                <br>
-                                                <p class="text-muted">London</p>
-                                            </div>
+                                            <!--/span-->
                                         </div>
+                                        <!--/row-->
+                                        
+                                        <!--/row-->
+                                        <h3 class="box-title m-t-40">Address</h3>
                                         <hr>
-                                        <p class="m-t-30">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries </p>
-                                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                        <h4 class="font-medium m-t-30">Skill Set</h4>
-                                        <hr>
-                                        <h5 class="m-t-30">Wordpress <span class="pull-right">80%</span></h5>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; height:6px;"> <span class="sr-only">50% Complete</span> </div>
+                                        <div class="row">
+                                            <div class="col-md-12 ">
+                                                <div class="form-group">
+                                                    <label>Street</label>
+                                                    <input type="text" name="address" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h5 class="m-t-30">HTML 5 <span class="pull-right">90%</span></h5>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; height:6px;"> <span class="sr-only">50% Complete</span> </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>City</label>
+                                                    <input type="text" name="city" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>State</label>
+                                                    <input type="text" name="state" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
                                         </div>
-                                        <h5 class="m-t-30">jQuery <span class="pull-right">50%</span></h5>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%; height:6px;"> <span class="sr-only">50% Complete</span> </div>
-                                        </div>
-                                        <h5 class="m-t-30">Photoshop <span class="pull-right">70%</span></h5>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; height:6px;"> <span class="sr-only">50% Complete</span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane" id="settings" role="tabpanel">
-                                    <div class="card-body">
-                                        <form class="form-horizontal form-material">
-                                            <div class="form-group">
-                                                <label class="col-md-12">Full Name</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Post Code</label>
+                                                    <input type="text" name="postcode" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="example-email" class="col-md-12">Email</label>
-                                                <div class="col-md-12">
-                                                    <input type="email" placeholder="johnathan@admin.com" class="form-control form-control-line" name="example-email" id="example-email">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">Password</label>
-                                                <div class="col-md-12">
-                                                    <input type="password" value="password" class="form-control form-control-line">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">Phone No</label>
-                                                <div class="col-md-12">
-                                                    <input type="text" placeholder="123 456 7890" class="form-control form-control-line">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-md-12">Message</label>
-                                                <div class="col-md-12">
-                                                    <textarea rows="5" class="form-control form-control-line"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-12">Select Country</label>
-                                                <div class="col-sm-12">
-                                                    <select class="form-control form-control-line">
-                                                        <option>London</option>
-                                                        <option>India</option>
-                                                        <option>Usa</option>
-                                                        <option>Canada</option>
-                                                        <option>Thailand</option>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Country</label>
+                                                    <select name="country" class="form-control custom-select">
+                                                        <option>--Select your Country--</option>
+                                                        <option value="India">India</option>
+                                                        <option value="Sri Lanka">Sri Lanka</option>
+                                                        <option value="USA">USA</option>
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <button class="btn btn-success">Update Profile</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                            <!--/span-->
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="form-actions"> 
+                                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
+                                        <button type="button" class="btn btn-inverse">Cancel</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Row -->
+                <!-- Row -->
+                
+                <!-- Row -->
+                <!-- Row -->
+                
+                <!-- Row -->
+                <!-- Row -->
+                
+                <!-- Row -->
+                <!-- Row -->
+                
+                <!-- Row -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
@@ -1102,7 +840,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer"> © 2018 Material Pro Admin by wrappixel.com </footer>
+            <footer class="footer">
+                © 2018 Material Pro Admin by wrappixel.com
+            </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -1132,17 +872,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="<?=base_url('assets/plugins/sparkline/jquery.sparkline.min.js')?>"></script>
     <!--Custom JavaScript -->
     <script src="<?=base_url('assets/js/custom.min.js')?>"></script>
-    <!-- ============================================================== -->
-    <!-- This page plugins -->
-    <!-- ============================================================== -->
-    <!-- chartist chart -->
-    <script src="<?=base_url('assets/plugins/chartist-js/dist/chartist.min.js')?>"></script>
-    <script src="<?=base_url('assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js')?>"></script>
-    <!--c3 JavaScript -->
-    <script src="<?=base_url('assets/plugins/d3/d3.min.js')?>"></script>
-    <script src="<?=base_url('assets/plugins/c3-master/c3.min.js')?>"></script>
-    <!-- Chart JS -->
-    <script src="<?=base_url('assets/js/dashboard1.js')?>"></script>
+    <script src="<?=base_url('assets/plugins/toast-master/js/jquery.toast.js')?>"></script>
+    <script src="<?=base_url('assets/js/toastr.js')?>"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
